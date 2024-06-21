@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 // Components
 import "bootstrap/dist/css/bootstrap.min.css";
-import ItemMenu from "./assets/components/ItemMenu";
+import Menu from "./assets/components/Menu";
 import { Button, Row, Col, Container, InputGroup, Form } from "react-bootstrap";
 // Icons
 import { TiSocialYoutube } from "react-icons/ti";
@@ -93,20 +93,21 @@ function App() {
             className="d-none d-sm-block fs-4 text-black mx-1"
             style={{
               borderRadius: 50,
-              width: "45px",
-              height: "45px",
+              width: "40px",
+              height: "40px",
               background: "white",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
             }}
           >
             {profLetter}
           </button>
         </Col>
       </Row>
-      <Row className="m-4">
-        <Col md={2} className="border p-2">
-          <Row></Row>
-        </Col>
-        <Col className="border p-2"></Col>
+      <Row className="ms-4">
+        <Menu />
+        <Col className="p-2"></Col>
       </Row>
     </>
   );
