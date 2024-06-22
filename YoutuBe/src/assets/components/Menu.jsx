@@ -13,6 +13,11 @@ import { CgPlayList } from "react-icons/cg";
 import { MdVideoLibrary } from "react-icons/md";
 import { SlLike } from "react-icons/sl";
 import { MdOutlineWatchLater } from "react-icons/md";
+import { HiFire } from "react-icons/hi";
+import { LuMusic4 } from "react-icons/lu";
+import { IoLogoGameControllerA } from "react-icons/io";
+import { HiMiniTrophy } from "react-icons/hi2";
+import { FaLightbulb } from "react-icons/fa";
 
 export default function Menu() {
   return (
@@ -65,6 +70,27 @@ export default function Menu() {
         <div className="text-white m-0 p-0 d-flex gap-2 align-items-center">
           Suscripciones
         </div>
+        <Row className="border-top mt-2"></Row>
+        <div className="text-white m-0 p-0 d-flex gap-2 align-items-center">
+          Explorar
+        </div>
+        <ItemMenu
+          icon={<HiFire size={20} color="white" />}
+          title="Tendencias"
+        />
+        <ItemMenu icon={<LuMusic4 size={20} color="white" />} title="Música" />
+        <ItemMenu
+          icon={<IoLogoGameControllerA size={24} color="white" />}
+          title="Videojuegos"
+        />
+        <ItemMenu
+          icon={<HiMiniTrophy size={20} color="white" />}
+          title="Deportes"
+        />
+        <ItemMenu
+          icon={<FaLightbulb size={20} color="white" />}
+          title="Aprendizaje"
+        />
       </Row>
     </Col>
   );
