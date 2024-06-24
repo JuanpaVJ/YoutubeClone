@@ -4,7 +4,18 @@ import { useState, useEffect } from "react";
 // Components
 import "bootstrap/dist/css/bootstrap.min.css";
 import Menu from "./assets/components/Menu";
-import { Button, Row, Col, Container, InputGroup, Form } from "react-bootstrap";
+import {
+  Button,
+  Row,
+  Col,
+  Container,
+  InputGroup,
+  Form,
+  Nav,
+  NavItem,
+  NavLink,
+  Offcanvas,
+} from "react-bootstrap";
 // Icons
 import { TiSocialYoutube } from "react-icons/ti";
 import { CiMenuFries } from "react-icons/ci";
@@ -57,13 +68,13 @@ function App() {
 
   return (
     <>
-      <Row className="m-0 navbar navbar--fixed-top d-flex justify-content-between align-items-center">
+      <Row className="m-0 d-flex align-items-center">
         <Col className="mt-2 d-flex">
           <Button variant="transparent">
             <CiMenuFries size={25} color="white" />
           </Button>
           <div className="d-flex align-items-center">
-            <TiSocialYoutube size={50} color="red" />
+            <TiSocialYoutube size={30} color="red" />
             <div className="text-white fs-5 d-none d-sm-block">Youtube</div>
           </div>
         </Col>
@@ -80,7 +91,7 @@ function App() {
           </Form>
         </Col>
         <Col className="d-flex justify-content-end">
-          <Button className="me-1" variant="transparent">
+          <Button variant="transparent">
             <RiVideoAddFill size={25} color="white" />
           </Button>
           <Button className="mx-1" variant="transparent">
@@ -90,11 +101,11 @@ function App() {
             <FaSearch size={25} color="white" />
           </Button>
           <button
-            className="d-none d-sm-block fs-4 text-black mx-1"
+            className="d-none d-sm-block fs-6 text-black"
             style={{
               borderRadius: 50,
-              width: "40px",
-              height: "40px",
+              width: "35px",
+              height: "35px",
               background: "white",
               display: "flex",
               justifyContent: "center",
@@ -105,7 +116,7 @@ function App() {
           </button>
         </Col>
       </Row>
-      <Row className="ms-4">
+      <Row className="m-0">
         <Menu />
         <Col className="p-2"></Col>
       </Row>

@@ -4,21 +4,16 @@ import { useState } from "react";
 import { TbArrowsRandom } from "react-icons/tb";
 // Components
 import { Button } from "react-bootstrap";
+import "../../../src/styles.css";
 
 export default function ItemMenu({
   icon = <TbArrowsRandom size={20} color="white" />,
   title = "Title",
 }) {
-  const [hovered, setHovered] = useState(false);
-  let hoverStyle = "p-0 m-0 justify-content-start align-items-center d-flex gap-4 my-1"
-
   return (
-    <Button
-      // variant="transparent"
-      className="p-0 m-0 justify-content-start align-items-center d-flex gap-4 my-1 bg-transparent border-0"
-    >
+    <Button className="hover-element w-50 px-2 ps-3">
       {icon}
-      <div className="text-white fs-6">{title}</div>
+      <div className="text-white fs-6 ellipsis-text">{title}</div>
     </Button>
   );
 }

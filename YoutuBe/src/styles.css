@@ -1,0 +1,36 @@
+.hover-element {
+  padding: 3px;
+  margin: 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  gap: 0.5rem;
+}
+
+.ellipsis-text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.hover-element-text {
+  padding: 3px;
+  margin: 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  gap: 0.5rem;
+  color: white;
+}
+
+.hover-element-text:hover {
+  background-color: rgba(166, 166, 166, 0.8);
+}
+
+.hover-element:hover {
+  background-color: rgba(166, 166, 166, 0.8);
+}
