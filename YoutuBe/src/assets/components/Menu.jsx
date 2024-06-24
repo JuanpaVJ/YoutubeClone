@@ -34,7 +34,7 @@ export default function Menu() {
       <Col
         md={2}
         className="overflow-auto m-0 ps-4"
-        style={{ maxHeight: "1000px", scrollbarWidth: "none" }}
+        style={{ maxHeight: "750px", scrollbarWidth: "none" }}
       >
         <Row className="gap-2">
           <ItemMenu
